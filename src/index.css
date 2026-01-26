@@ -1,3 +1,5 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -61,7 +63,7 @@
     --primary: 213 66% 48%;
     --primary-foreground: 205 82% 97%;
 
-    --secondary: 0 0% 96%;
+    --secondary: 0 0% 42.75%;
     --secondary-foreground: 0 0% 15%;
 
     --muted: 0 0% 96%;
@@ -129,14 +131,12 @@
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Satoshi';
   src: url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
   font-weight: 400 900;
   font-display: swap;
-}
-
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
+} */
 
 @layer base {
   * {
