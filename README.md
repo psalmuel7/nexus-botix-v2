@@ -8,7 +8,7 @@
 
 Follow these steps:
 
-```sh
+```sh 
 # Step 1: Clone the repository using the project's Git URL.
 git clone https://gitlab.com/nexus-botix/nexusbotix-website-v2.git
 
