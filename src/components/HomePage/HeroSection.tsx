@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-background py-20 md:py-36 min-h-[calc(100vh-9rem)]">
-      <div className="container mx-auto px-6 text-center">
+    <section className="w-full bg-background py-20 md:py-30 min-h-[calc(100vh-8rem)] flex items-center justify-center">
+      <div className="container px-6 text-center">
         {/* Trust badge */}
         <div className="flex items-center justify-center gap-4 mb-8">
-          <img src="/wheat-left.svg" alt="wheat" className="pointer-events-none" />
+          <img src="/Home/wheat-left.svg" alt="wheat" className="pointer-events-none" />
 
-          <span className="text-lg font-bold text-foreground">
+          <span className="text-md font-bold text-foreground">
             Trusted by teams simplifying customer conversations
           </span>
-          <img src="/wheat-right.svg" alt="wheat" className="pointer-events-none" />
+          <img src="/Home/wheat-right.svg" alt="wheat" className="pointer-events-none" />
         </div>
 
         {/* Main heading */}
@@ -22,7 +22,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-10 font-medium">
+        <p className="text-md text-muted-foreground max-w-3xl mx-auto mb-10 font-medium">
           Nexus Botix helps businesses deploy smart chatbots for customer support, lead capture, and instant responses across their website and channels.
         </p>
 

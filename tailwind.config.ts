@@ -87,6 +87,7 @@ export default {
       },
       fontSize: {
         header: ["64px", { lineHeight: "1.3", fontWeight: "700" }],
+        md: ["18px", { lineHeight: "1.45" }],
       },
       borderRadius: {
         lg: "var(--radius)",

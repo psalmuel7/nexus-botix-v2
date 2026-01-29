@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const navLinks = [
   { label: "Product", href: "/product" },
@@ -13,8 +12,8 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header className="w-full bg-background">
-      <div className="flex flex-col py-6 px-5 sm:px-24 gap-6">
+    <header className="w-full bg-background sticky top-0 left-0 z-[100] shadow-s">
+      <div className="flex flex-col py-5 px-5 sm:px-16 gap-6">
         <div className="justify-end hidden sm:flex">
           <Link
             to="/auth"

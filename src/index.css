@@ -138,6 +138,25 @@
   font-display: swap;
 } */
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #C2C2C2;
+  border: #264653;
+  border-left: black;
+  border-right: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #616161;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3d3d;
+}
+
 @layer base {
   * {
     @apply border-border;

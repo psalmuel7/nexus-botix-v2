@@ -1,7 +1,18 @@
-import UnderDevelopment from "@/components/UnderDevelopment";
+import Header from "@/components/Header";
+import Products from "@/components/Products/Products";
+import { useEffect } from "react";
 
 const Product = () => {
-  return <UnderDevelopment pageName="Product" />;
+  scrollTo(0, 0);
+  useEffect(() => {
+    document.title = "Product - Nexus Botix";
+  }, []);
+  return (
+    <>
+      <Header />
+      <Products />
+    </>
+  );
 };
 
 export default Product;

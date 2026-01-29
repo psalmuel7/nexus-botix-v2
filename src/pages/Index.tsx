@@ -1,11 +1,17 @@
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import Home from "@/components/HomePage/Home";
+import { useEffect } from "react";
 
 const Index = () => {
+  scrollTo(0, 0);
+  useEffect(() => {
+    document.title = "Nexus Botix";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <HeroSection />
+      <Home />
     </div>
   );
 };
