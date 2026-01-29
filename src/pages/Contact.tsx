@@ -16,7 +16,7 @@ const Contact = () => {
         title="Contact Us"
         subtitle="Got something in mind! A question, an idea, or just curious? Reach out — Our team is ready to assist with clarity and care."
       />
-      <GlobalComponent />
+      {/* <GlobalComponent /> */}
     </>
   );
 };

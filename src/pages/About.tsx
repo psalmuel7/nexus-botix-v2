@@ -16,7 +16,7 @@ const About = () => {
         title="About Us"
         subtitle="We help businesses create powerful chatbots through a simple, intuitive platform — no technical skills, no complexity, just better conversations."
       />
-      <GlobalComponent />
+      {/* <GlobalComponent /> */}
     </>
   );
 };
