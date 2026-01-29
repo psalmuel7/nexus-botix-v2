@@ -1,20 +1,37 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { label: "Product", href: "/product" },
   { label: "Use Cases", href: "/use-cases" },
   { label: "Pricing", href: "/pricing" },
-  { label: "About", href: "/about" },
+  { label: "About Us", href: "/about-us" },
   { label: "Contact", href: "/contact" },
   { label: "Legal", href: "/legal" },
 ];
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="w-full bg-background sticky top-0 left-0 z-[100] shadow-s">
       <div className="flex flex-col py-5 px-5 sm:px-16 gap-6">
-        <div className="justify-end hidden sm:flex">
+        {/* Sign in row - collapses on scroll */}
+        <div 
+          className={`justify-end hidden sm:flex transition-all duration-300 overflow-hidden ${
+            isScrolled ? "max-h-0 opacity-0 -mb-6" : "max-h-10 opacity-100"
+          }`}
+        >
           <Link
             to="/auth"
             className="text-base font-medium text-foreground hover:text-primary transition-colors mr-3"
