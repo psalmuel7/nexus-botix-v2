@@ -1,4 +1,6 @@
-import UnderDevelopment from "@/components/UnderDevelopment";
+import Header from "@/components/Header";
+import PageHeroSection from "@/components/shared/PageHeroSection";
+import GlobalComponent from "@/shared/GlobalComponent";
 import { useEffect } from "react";
 
 const Contact = () => {
@@ -7,7 +9,16 @@ const Contact = () => {
     document.title = "Contact - Nexus Botix";
   }, []);
 
-  return <UnderDevelopment pageName="Contact" />;
+  return (
+    <>
+      <Header />
+      <PageHeroSection 
+        title="Contact Us"
+        subtitle="Got something in mind! A question, an idea, or just curious? Reach out — Our team is ready to assist with clarity and care."
+      />
+      <GlobalComponent />
+    </>
+  );
 };
 
 export default Contact;

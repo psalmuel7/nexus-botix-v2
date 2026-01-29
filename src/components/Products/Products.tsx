@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "./HeroSection";
+import PageHeroSection from "@/components/shared/PageHeroSection";
 import GlobalComponent from "@/shared/GlobalComponent";
 import HowItWorks from "./HowItWorks";
 import CoreCapabilities from "./CoreCapabilities";
@@ -13,7 +13,10 @@ const Products = () => {
 
   return (
     <div>
-      <HeroSection />
+      <PageHeroSection 
+        title="Everything your chatbot needs to work smarter."
+        subtitle="Nexus Botix is a single platform for answering questions, handling conversations, and capturing leads without juggling tools or workflows."
+      />
       <HowItWorks />
       <CoreCapabilities />
       <Conversations />
